@@ -15,5 +15,5 @@ jobs:
       uses: katalon-studio/katalon-studio-github-action@master
       with:
           version: '7.5.5'
-          projectPath: '${{ github.workspace }}\<project name>.prj'
+          projectPath: '${{ github.workspace }}'
           args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" -apiKey= ${{ secrets.API_KEY }}'
